@@ -8,49 +8,39 @@
 
 ## Install
 
-```
-$ npm install --global alfred-polyglot
+```bash
+npm install --global alfred-polyglot
 ```
 
 *Requires [Node.js](https://nodejs.org) 7.6+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
-
 
 ## Setup
 
 1. Set the default language text will get translated to if `to` parameter is not specified.
 
- ```
- trans !set default-language (language)
- ```
+    ```plain
+    trans !set default-language (language)
+    ```
 
-2. Remove the default translate workflow. Navigate to
-
- `Alfred Preferences -> Features -> Web Search`
-
- ...search for `translate`, and unset the tickbox under `Enabled`.
-
+1. Remove the default translate workflow. Navigate to Alfred Preferences → Features → Web Search and search for “translate”, and unset the tickbox under “Enabled”.
 
 ## Usage
 
-```
+```plain
 trans (text) [from (language)] [to (language)]
 ```
 
-The output will be translated `text`. Both `from` and `to` parameters are optional, and can be used anywhere in input.
+The output will be the translated form of `text`. Both `from` and `to` parameters are optional, and can be used anywhere in input.
 
 ## Examples
 
 ![1](media/1.png)
 
-
 ![2](media/2.png)
-
 
 ![3](media/3.png)
 
-
 ![4](media/4.png)
-
 
 ## License
 
